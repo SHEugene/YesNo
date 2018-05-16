@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void  onClick(View view){
                 String answer= new Random(System.currentTimeMillis()).nextBoolean()== true? "YES": "NO";
+                answerBox.setText("");
                 answerBox.setText(answer);
             }
         });
