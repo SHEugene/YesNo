@@ -46,7 +46,6 @@
             android:layout_marginRight="50px"
             android:layout_row="4"
             android:background="@color/colorPrimaryDark"
-            android:onClick="pressBntclick"
             android:shadowColor="@android:color/background_dark"
             android:text="Get  Advice"
             android:textColor="@android:color/white"

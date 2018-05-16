@@ -21,15 +21,14 @@ public class MainActivity extends AppCompatActivity {
         perssBnt=(Button)findViewById(R.id.pressBnt);
         answerBox=(TextView) findViewById(R.id.answerBox);
         SetFonstForElemets();
+        perssBnt.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void  onClick(View view){
+                String answer= new Random(System.currentTimeMillis()).nextBoolean()== true? "YES": "NO";
+                answerBox.setText(answer);
+            }
+        });
     }
-
-
-    public void pressBntclick(View view) {
-        String answer= new Random(System.currentTimeMillis()).nextBoolean()== true? "YES": "NO";
-        answerBox.setText(answer);
-    }
-
-
     private  void  SetFonstForElemets() {
         perssBnt.setTypeface(Typeface.DEFAULT.createFromAsset(getAssets(),"AlfaSlabOne-Regular.ttf"));
         answerBox.setTypeface(Typeface.DEFAULT.createFromAsset(getAssets(),"AlfaSlabOne-Regular.ttf"));
