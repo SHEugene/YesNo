@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Советчик</string>
+    <string name="buttonText">Получить Совет</string>
+    <string name="Yes">Да</string>
+    <string name="No">Нет</string>
+</resources>

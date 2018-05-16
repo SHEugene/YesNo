@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         perssBnt.setOnClickListener( new View.OnClickListener(){
             @Override
             public void  onClick(View view){
-                String answer= new Random(System.currentTimeMillis()).nextBoolean()== true? "YES": "NO";
+                String answer= new Random(System.currentTimeMillis()).nextBoolean()== true? getResources().getString(R.string.Yes): getResources().getString(R.string.No);
                 answerBox.setText("");
                 answerBox.setText(answer);
             }
