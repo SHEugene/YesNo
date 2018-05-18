@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import me.grantland.widget.AutofitHelper;
+
 public class MainActivity extends AppCompatActivity {
 
     Button perssBnt;
