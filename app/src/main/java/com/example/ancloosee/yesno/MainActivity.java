@@ -1,7 +1,7 @@
 package com.example.ancloosee.yesno;
+import android.app.Activity;
 
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,9 +9,7 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-import me.grantland.widget.AutofitHelper;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     Button perssBnt;
     TextView answerBox;
